@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطة الاستراتيجية للتسويق الرقمي والتطوير الإلكتروني - جمعية أطفال طيبة | شركة شراع</title>
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم المتجاوب والعصري -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: radial-gradient(circle at top right, #064e3b, #042f2e 45%, #022c22 100%);
+            color: #f0fdfa;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        /* تأثيرات البطاقات الزجاجية */
+        .glass-card {
+            background: rgba(19, 78, 74, 0.35);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(45, 212, 191, 0.25);
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.4);
+        }
+        .glass-card-dark {
+            background: rgba(4, 47, 46, 0.65);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(20, 184, 166, 0.3);
+        }
+        /* خطوط الربط في المخطط الهيكلي */
+        .tree-connector-v {
+            width: 3px;
+            background: linear-gradient(to bottom, #2dd4bf, #0d9488);
+            margin: 0 auto;
+        }
+        /* حركة الطفو للشعار والأيقونات */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-7px); }
+        }
+        .animate-float {
+            animation: floatSlow 3.5s ease-in-out infinite;
+        }
+        /* حركة الطفو والتوهج المستمر للوجو العائم */
+        @keyframes floatAndGlow {
+            0%, 100% {
+                transform: translateY(0px) scale(1);
+                box-shadow: 0 0 18px rgba(45, 212, 191, 0.45), 0 0 32px rgba(20, 184, 166, 0.25);
+            }
+            50% {
+                transform: translateY(-8px) scale(1.04);
+                box-shadow: 0 0 28px rgba(45, 212, 191, 0.85), 0 0 48px rgba(34, 211, 238, 0.55);
+            }
+        }
+        .floating-glow-logo {
+            animation: floatAndGlow 3.2s ease-in-out infinite;
+        }
+        /* تأثيرات الموشن لظهور الأقسام والبطاقات */
+        .motion-reveal {
+            opacity: 0;
+            transform: translateY(30px) scale(0.985);
+            transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .motion-reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .motion-card {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+        .motion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.55), 0 0 20px rgba(45, 212, 191, 0.15);
+            border-color: rgba(45, 212, 191, 0.55);
+        }
+        /* شريط التمرير المخصص */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #022c22;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d9488;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="pb-28 relative">
+
+    <!-- خلفية شبكية هندسية خفيفة -->
+    <div class="fixed inset-0 pointer-events-none opacity-15 z-0" 
+         style="background-image: radial-gradient(#2dd4bf 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+    <!-- رأس الصفحة (Header Infographic Banner) -->
+    <header class="relative z-10 pt-10 pb-12 px-4 border-b border-teal-700/40 bg-gradient-to-b from-teal-950/90 to-transparent">
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
+            <!-- اللوجو الرئيسي في منتصف أعلى العرض -->
+            <div class="w-28 h-28 rounded-2xl p-1.5 bg-gradient-to-tr from-teal-400 to-cyan-300 shadow-2xl animate-float flex-shrink-0">
+                <img src="https://i.ibb.co/3mcGJZDm/f7a2f35c-a1d9-41a9-abab-883812218eaf.jpg" 
+                     alt="شعار شركة شراع" 
+                     class="w-full h-full object-cover rounded-xl">
+            </div>
+
+            <!-- العنوان الرئيسي والشارة -->
+            <div class="max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-400/40 text-teal-200 px-3.5 py-1 rounded-full text-xs font-bold mb-3">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                    جمعية أطفال طيبة
+                </div>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-black text-white leading-tight">
+                    الخطة الاستراتيجية للتسويق الرقمي والتطوير الإلكتروني
+                </h1>
+                <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+                    <span class="bg-teal-900/80 border border-teal-500/40 text-teal-100 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold">
+                        مقدمة من شركة شراع
+                    </span>
+                    <span class="bg-amber-500/20 border border-amber-400/50 text-amber-200 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold">
+                        مدة التعاقد: عام كامل
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي للمخطط -->
+    <main class="max-w-7xl mx-auto px-4 mt-8 space-y-12 relative z-10">
+
+        <!-- أولًا: المقدمة والتصور العام للمشروع -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-teal-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">الرؤية والتأسيس الاستراتيجي</span>
+                <h2 class="text-2xl font-black text-white mt-1">أولًا: المقدمة والتصور العام للمشروع</h2>
+            </div>
+            <div class="space-y-4 text-teal-50 text-sm md:text-base leading-relaxed">
+                <p>تتشرف شركة شراع بتقديم هذه الخطة الاستراتيجية المتكاملة للتسويق الرقمي إلى جمعية أطفال طيبة، انطلاقًا من إيماننا بأهمية الدور الذي تقوم به الجمعية في تنمية الطفولة وتمكين الأطفال، واكتشاف مواهبهم، وتطوير قدراتهم المعرفية والسلوكية والاجتماعية، وتعزيز مشاركتهم في المجتمع.</p>
+                <p>نهدف من خلال هذا التعاون إلى بناء منظومة تسويق رقمي متكاملة تسهم في تعزيز مكانة الجمعية باعتبارها جهة تنموية رائدة في مجال الطفولة، وتوسيع نطاق وصول رسالتها إلى المجتمع، وإبراز أثر برامجها ومبادراتها، وزيادة التفاعل مع خدماتها وأنشطتها، وتعزيز ثقة الجمهور والجهات الداعمة والشركاء في أعمالها.</p>
+                <p>ولا تقتصر الخطة على تحسين الظهور الرقمي أو زيادة أعداد المتابعين، بل تستهدف إنشاء منظومة متكاملة تربط بين الموقع الإلكتروني ومحركات البحث ومنصات التواصل الاجتماعي والحملات الإعلانية، بحيث تعمل جميع القنوات بصورة مترابطة لتحقيق أهداف الجمعية.</p>
+                <p>وتعتمد شركة شراع في تنفيذ هذه الاستراتيجية على الجمع بين التخطيط التسويقي، والتحليل الرقمي، وصناعة المحتوى، والتحسين التقني، والإدارة الإعلانية، وقياس الأداء، بما يضمن استمرار تطوير الحضور الرقمي للجمعية طوال مدة التعاقد.</p>
+            </div>
+        </section>
+
+        <!-- ثانيًا: الأهداف الاستراتيجية للخطة -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-cyan-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">الغايات والمحاور المستهدفة</span>
+                <h2 class="text-2xl font-black text-white mt-1">ثانيًا: الأهداف الاستراتيجية للخطة</h2>
+                <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">تستهدف الخطة تحقيق مجموعة من الأهداف الرئيسية، تتمثل في:</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="strategic-goals-grid"></div>
+        </section>
+
+        <!-- ثالثًا: خدمة تحسين محركات البحث SEO -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-emerald-400">
+            <div class="text-center max-w-3xl mx-auto mb-6">
+                <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider">الركيزة الأولى في المنظومة الرقمية</span>
+                <h2 class="text-2xl md:text-3xl font-black text-white mt-1">ثالثًا: خدمة تحسين محركات البحث SEO</h2>
+            </div>
+
+            <!-- العقدة المركزية للمحور -->
+            <div class="flex flex-col items-center mb-8">
+                <div class="bg-gradient-to-r from-teal-600 to-emerald-600 px-8 py-3.5 rounded-2xl shadow-2xl border-2 border-teal-300/60 text-center motion-card">
+                    <h3 class="text-base md:text-lg font-black text-white">9 محاور متكاملة لتحسين الظهور في محركات البحث والذكاء الاصطناعي</h3>
+                </div>
+                <div class="tree-connector-v h-6"></div>
+            </div>
+
+            <div class="space-y-6" id="seo-sections-container"></div>
+        </section>
+
+        <!-- رابعًا: خدمة إدارة حسابات التواصل الاجتماعي -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-amber-400">
+            <div class="text-center max-w-3xl mx-auto mb-6">
+                <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">الركيزة الثانية في المنظومة الرقمية</span>
+                <h2 class="text-2xl md:text-3xl font-black text-white mt-1">رابعًا: خدمة إدارة حسابات التواصل الاجتماعي</h2>
+            </div>
+
+            <div class="flex flex-col items-center mb-8">
+                <div class="bg-gradient-to-r from-teal-600 to-cyan-600 px-8 py-3.5 rounded-2xl shadow-2xl border-2 border-cyan-300/60 text-center motion-card">
+                    <h3 class="text-base md:text-lg font-black text-white">10 محاور مترابطة لبناء الهوية الرقمية وصناعة المحتوى وإدارة التفاعل</h3>
+                </div>
+                <div class="tree-connector-v h-6"></div>
+            </div>
+
+            <div class="space-y-6" id="social-sections-container"></div>
+        </section>
+
+        <!-- خامسًا: خدمة إدارة الحملات الإعلانية الممولة -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-cyan-400">
+            <div class="text-center max-w-3xl mx-auto mb-6">
+                <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">الركيزة الثالثة في المنظومة الرقمية</span>
+                <h2 class="text-2xl md:text-3xl font-black text-white mt-1">خامسًا: خدمة إدارة الحملات الإعلانية الممولة</h2>
+            </div>
+
+            <div class="flex flex-col items-center mb-8">
+                <div class="bg-gradient-to-r from-cyan-600 to-teal-600 px-8 py-3.5 rounded-2xl shadow-2xl border-2 border-teal-300/60 text-center motion-card">
+                    <h3 class="text-base md:text-lg font-black text-white">10 مسارات احترافية لتخطيط وإدارة وتحسين الحملات الإعلانية</h3>
+                </div>
+                <div class="tree-connector-v h-6"></div>
+            </div>
+
+            <div class="space-y-6" id="ads-sections-container"></div>
+        </section>
+
+        <!-- سادسًا: الربط والتكامل بين خدمات التسويق الرقمي -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-teal-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">الترابط التشغيلي بين القنوات</span>
+                <h2 class="text-2xl font-black text-white mt-1">سادسًا: الربط والتكامل بين خدمات التسويق الرقمي</h2>
+                <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">
+                    تتمثل إحدى أهم نقاط القوة في هذه الخطة في عدم التعامل مع SEO والسوشيال ميديا والإعلانات باعتبارها خدمات منفصلة، بل باعتبارها منظومة واحدة تعمل بصورة مترابطة.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="integration-grid"></div>
+        </section>
+
+        <!-- سابعًا: آلية العمل والتنفيذ -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-emerald-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider">التنفيذ المتوازي والمنظم</span>
+                <h2 class="text-2xl font-black text-white mt-1">سابعًا: آلية العمل والتنفيذ</h2>
+                <div class="space-y-2 text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">
+                    <p>تعتمد شركة شراع على منظومة عمل متكاملة تضمن استمرار تنفيذ جميع الخدمات بالتوازي منذ اليوم الأول للتعاقد.</p>
+                    <p>ولا يتم تأجيل خدمة لحين الانتهاء من خدمة أخرى، بل تبدأ أعمال التحليل والتهيئة الفنية وإعداد المحتوى وإدارة الحسابات وتجهيز الحملات الإعلانية بصورة متزامنة، وفق ترتيب الأولويات والاعتماديات الفنية.</p>
+                    <p class="font-bold text-teal-200 pt-1">وتشمل آلية العمل:</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="workflow-grid"></div>
+        </section>
+
+        <!-- ثامنًا: التقارير ومؤشرات قياس الأداء -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-amber-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">الحوكمة والشفافية والبيانات</span>
+                <h2 class="text-2xl font-black text-white mt-1">ثامنًا: التقارير ومؤشرات قياس الأداء</h2>
+                <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">
+                    تلتزم شركة شراع بإعداد تقارير دورية توضح حجم الأعمال المنفذة ونتائج الأداء ومدى التقدم نحو تحقيق الأهداف.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="reports-grid"></div>
+            <div class="glass-card-dark p-4 rounded-2xl border-r-4 border-amber-400 mt-6 text-xs md:text-sm text-amber-100 leading-relaxed">
+                <p>وتُستخدم هذه التقارير لاتخاذ قرارات تسويقية مبنية على البيانات الفعلية، وليس على التقديرات الشخصية.</p>
+            </div>
+        </section>
+
+        <!-- تاسعًا: ضوابط الجودة والخصوصية والامتثال -->
+        <section class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-cyan-400">
+            <div class="border-b border-teal-700/50 pb-4 mb-5">
+                <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">حماية الطفولة والالتزام النظامي</span>
+                <h2 class="text-2xl font-black text-white mt-1">تاسعًا: ضوابط الجودة والخصوصية والامتثال</h2>
+                <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">
+                    نظرًا لطبيعة عمل الجمعية وارتباط أنشطتها بالأطفال والمستفيدين، تلتزم شركة شراع بمراعاة مجموعة من الضوابط المهنية والتنظيمية.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5" id="compliance-grid"></div>
+        </section>
+
+        <!-- عاشرًا: التزامات شركة شراع + الحادي عشر: التزامات الجمعية -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- عاشرًا: التزامات شركة شراع -->
+            <div class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-teal-400">
+                <div class="border-b border-teal-700/50 pb-4 mb-5">
+                    <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">مسؤوليات الشريك التنفيذي</span>
+                    <h2 class="text-xl md:text-2xl font-black text-white mt-1">عاشرًا: التزامات شركة شراع</h2>
+                    <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">تلتزم شركة شراع خلال فترة التعاقد بما يلي:</p>
+                </div>
+                <ol class="list-decimal list-inside space-y-2.5 text-xs md:text-sm text-teal-50 leading-relaxed" id="sheraa-commitments-list"></ol>
+            </div>
+
+            <!-- الحادي عشر: التزامات الجمعية -->
+            <div class="glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-amber-400">
+                <div class="border-b border-teal-700/50 pb-4 mb-5">
+                    <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">متطلبات التكامل المؤسسي</span>
+                    <h2 class="text-xl md:text-2xl font-black text-white mt-1">الحادي عشر: التزامات الجمعية</h2>
+                    <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">لضمان تحقيق أفضل نتائج ممكنة، يتطلب تنفيذ الخطة تعاون الجمعية من خلال:</p>
+                </div>
+                <ol class="list-decimal list-inside space-y-2.5 text-xs md:text-sm text-teal-50 leading-relaxed" id="assoc-commitments-list"></ol>
+            </div>
+        </section>
+
+        <!-- الثاني عشر: المخرجات المستهدفة من التعاون السنوي + الثالث عشر: النتيجة الاستراتيجية المتوقعة -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- الثاني عشر: المخرجات المستهدفة من التعاون السنوي -->
+            <div class="lg:col-span-6 glass-card motion-reveal rounded-3xl p-6 md:p-8 border-t-4 border-emerald-400 flex flex-col justify-between">
+                <div>
+                    <div class="border-b border-teal-700/50 pb-4 mb-5">
+                        <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider">حصاد عام كامل من العمل</span>
+                        <h2 class="text-xl md:text-2xl font-black text-white mt-1">الثاني عشر: المخرجات المستهدفة من التعاون السنوي</h2>
+                        <p class="text-teal-100 text-xs md:text-sm mt-2 leading-relaxed">تستهدف هذه الخطة بناء منظومة رقمية متكاملة للجمعية، تشمل:</p>
+                    </div>
+                    <ul class="space-y-2.5 text-xs md:text-sm text-teal-50" id="annual-outputs-list"></ul>
+                </div>
+            </div>
+
+            <!-- الثالث عشر: النتيجة الاستراتيجية المتوقعة -->
+            <div class="lg:col-span-6 glass-card motion-reveal rounded-3xl p-6 md:p-8 border-2 border-teal-400/60 bg-gradient-to-br from-teal-900/80 via-teal-950/90 to-cyan-950/85 flex flex-col justify-between">
+                <div>
+                    <div class="border-b border-teal-700/50 pb-4 mb-5">
+                        <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">الأثر المستدام والشراكة</span>
+                        <h2 class="text-xl md:text-2xl font-black text-white mt-1">الثالث عشر: النتيجة الاستراتيجية المتوقعة</h2>
+                    </div>
+
+                    <div class="space-y-4 text-teal-50 text-xs md:text-sm leading-relaxed mb-6">
+                        <p>تسعى شركة شراع من خلال هذا التعاون إلى إحداث نقلة نوعية في الحضور الرقمي لجمعية أطفال طيبة، من خلال الانتقال من مجرد إدارة قنوات رقمية متفرقة إلى منظومة تسويق رقمي مترابطة تخدم رسالة الجمعية وتدعم أهدافها التنموية.</p>
+                        <p>ونؤمن أن النجاح الحقيقي لا يُقاس فقط بعدد المتابعين أو مرات الظهور، بل بمدى قدرة العمل التسويقي على إيصال رسالة الجمعية إلى الجمهور المناسب، وتعريف المجتمع ببرامجها، وتعزيز الثقة في أثرها، وزيادة الاستفادة من خدماتها، وتوسيع نطاق المشاركة المجتمعية.</p>
+                        <p>كما نهدف إلى أن يصبح الموقع الإلكتروني وحسابات التواصل الاجتماعي منصات فعالة للتعريف بالجمعية وتوثيق إنجازاتها وإبراز قصص نجاحها واستقطاب المهتمين برسالتها.</p>
+                        <p>إن الاستثمار في الحضور الرقمي لجمعية أطفال طيبة هو استثمار في وصول رسالتها إلى نطاق أوسع، وفي صناعة أثر مجتمعي مستدام يمتد إلى مستقبل الأطفال والمجتمع.</p>
+                        <p>وتتشرف شركة شراع بأن تكون شريكًا استراتيجيًا للجمعية في هذه الرحلة، وأن تسهم بخبراتها التسويقية والتقنية والإبداعية في تحقيق أهدافها وتوسيع أثرها.</p>
+                    </div>
+                </div>
+
+                <!-- التوقيع الختامي -->
+                <div class="pt-5 border-t border-teal-700/70 flex items-center gap-4">
+                    <img src="https://i.ibb.co/3mcGJZDm/f7a2f35c-a1d9-41a9-abab-883812218eaf.jpg" alt="شعار شركة شراع" class="w-12 h-12 rounded-xl object-cover border border-teal-400/50 flex-shrink-0">
+                    <div>
+                        <strong class="text-white text-base block">شركة شراع</strong>
+                        <p class="text-amber-300 text-xs md:text-sm font-bold mt-0.5">شريككم في صناعة الأثر والنمو الرقمي</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- عناصر عائمة سفلية (الشعار المتحرك المتوهج + واتساب) -->
+    <div class="fixed bottom-5 left-5 z-50 flex items-center gap-3">
+        <div class="floating-glow-logo bg-teal-900/90 backdrop-blur-md p-1.5 rounded-2xl border-2 border-teal-400/80" title="شركة شراع">
+            <img src="https://i.ibb.co/3mcGJZDm/f7a2f35c-a1d9-41a9-abab-883812218eaf.jpg" alt="شعار شركة شراع" class="w-11 h-11 object-cover rounded-xl">
+        </div>
+        <a href="https://wa.me/966578310776" target="_blank" rel="noopener noreferrer"
+           class="bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-2xl shadow-2xl transition-transform hover:scale-105 border-2 border-emerald-300"
+           title="تواصل عبر واتساب">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- كود JavaScript لبناء البطاقات وتفعيل التفاعل والموشن -->
+    <script>
+        try {
+            // ثانيًا: الأهداف الاستراتيجية للخطة
+            const strategicGoals = [
+                {
+                    title: "1. تعزيز الهوية الرقمية للجمعية",
+                    accent: "teal",
+                    items: [
+                        "ترسيخ صورة ذهنية احترافية ومتميزة للجمعية لدى الجمهور.",
+                        "إبراز رسالة الجمعية ورؤيتها وأهدافها التنموية بصورة واضحة.",
+                        "توحيد الهوية الاتصالية والرسائل التسويقية عبر جميع المنصات الرقمية.",
+                        "تعزيز الثقة والمصداقية من خلال إبراز الإنجازات والنتائج الفعلية للبرامج والمبادرات."
+                    ]
+                },
+                {
+                    title: "2. زيادة الوعي المجتمعي",
+                    accent: "cyan",
+                    items: [
+                        "توسيع نطاق وصول الجمعية إلى الجمهور المستهدف.",
+                        "التعريف بأهمية البرامج التربوية والتعليمية والثقافية التي تقدمها الجمعية.",
+                        "نشر الوعي بأهمية تنمية مهارات الأطفال واكتشاف مواهبهم.",
+                        "تعزيز حضور الجمعية في المجتمع المحلي بالمدينة المنورة والمناطق المستهدفة."
+                    ]
+                },
+                {
+                    title: "3. زيادة الاستفادة من برامج الجمعية",
+                    accent: "emerald",
+                    items: [
+                        "رفع معدلات الوصول إلى صفحات البرامج والأنشطة.",
+                        "زيادة عدد الزيارات المؤهلة إلى صفحات التسجيل.",
+                        "تحسين معدلات تحويل الزوار إلى مسجلين في البرامج.",
+                        "تعزيز التفاعل مع المبادرات والفعاليات والأنشطة المختلفة."
+                    ]
+                },
+                {
+                    title: "4. تعزيز المشاركة المجتمعية",
+                    accent: "amber",
+                    items: [
+                        "استقطاب المهتمين بالعمل التطوعي.",
+                        "زيادة التفاعل مع المبادرات المجتمعية.",
+                        "تعزيز فرص التعاون مع المؤسسات والجهات ذات العلاقة.",
+                        "توسيع قاعدة الشركاء والمهتمين برسالة الجمعية."
+                    ]
+                },
+                {
+                    title: "5. تعزيز الظهور في محركات البحث",
+                    accent: "teal",
+                    items: [
+                        "تحسين ترتيب الموقع في نتائج البحث المرتبطة بمجال عمل الجمعية.",
+                        "زيادة الزيارات العضوية من الجمهور المهتم.",
+                        "تحسين الظهور في عمليات البحث المحلية.",
+                        "تطوير المحتوى الرقمي بما يتوافق مع محركات البحث التقليدية ومحركات البحث المعتمدة على الذكاء الاصطناعي."
+                    ]
+                },
+                {
+                    title: "6. تحقيق الاستفادة المثلى من الإعلانات الرقمية",
+                    accent: "cyan",
+                    items: [
+                        "الوصول إلى الفئات الأكثر اهتمامًا برسالة الجمعية.",
+                        "الترويج للبرامج والمبادرات والفعاليات.",
+                        "زيادة التسجيل في الأنشطة المتاحة.",
+                        "استقطاب المتطوعين والمهتمين بالشراكات.",
+                        "دعم الحملات التوعوية والتعريفية.",
+                        "دعم حملات جمع التبرعات عند توافر التصاريح والموافقات اللازمة والقنوات المعتمدة لذلك."
+                    ]
+                }
+            ];
+
+            // ثالثًا: خدمة تحسين محركات البحث SEO
+            const seoSections = [
+                {
+                    title: "1. التحليل الشامل للموقع الإلكتروني",
+                    accent: "teal",
+                    intro: [
+                        "تبدأ خدمة تحسين محركات البحث بإجراء تحليل شامل للموقع الإلكتروني للجمعية، بهدف تحديد وضعه الحالي من الناحية التقنية والتسويقية والمحتوى، ومعرفة العوامل التي تؤثر في ظهوره داخل نتائج محركات البحث.",
+                        "ويشمل التحليل:"
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. التحليل التقني للموقع",
+                            items: [
+                                "فحص بنية الموقع وطريقة تنظيم الصفحات والأقسام.",
+                                "تحليل سرعة تحميل الصفحات على أجهزة الكمبيوتر والهواتف المحمولة.",
+                                "فحص مؤشرات أداء الموقع الأساسية Core Web Vitals.",
+                                "اختبار توافق الموقع مع مختلف أحجام الشاشات والأجهزة.",
+                                "مراجعة أخطاء الزحف والفهرسة.",
+                                "فحص ملف Robots.txt والتأكد من السماح لمحركات البحث بالوصول إلى الصفحات المهمة.",
+                                "مراجعة خريطة الموقع XML Sitemap وتحديثها عند الحاجة.",
+                                "اكتشاف الروابط المعطلة وأخطاء الصفحات 404.",
+                                "فحص الروابط الداخلية والخارجية.",
+                                "مراجعة إعدادات إعادة التوجيه Redirects.",
+                                "التأكد من استخدام شهادة الحماية SSL وبروتوكول HTTPS.",
+                                "فحص تكرار المحتوى والصفحات المتشابهة.",
+                                "مراجعة الروابط الأساسية Canonical Tags.",
+                                "التحقق من عدم وجود صفحات مهمة محجوبة عن الفهرسة.",
+                                "مراجعة هيكل عناوين الصفحات H1 وH2 وH3.",
+                                "فحص الصور وأحجامها وخصائصها البديلة Alt Text.",
+                                "مراجعة البيانات المنظمة Schema Markup.",
+                                "فحص تجربة المستخدم ومسارات التنقل داخل الموقع."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. تحليل بنية المحتوى",
+                            items: [
+                                "مراجعة المحتوى التعريفي بالجمعية.",
+                                "تحليل صفحات البرامج والمبادرات.",
+                                "مراجعة صفحات الأهداف والرؤية والرسالة.",
+                                "تحليل صفحات الأخبار والتقارير والإنجازات.",
+                                "تحديد الصفحات التي تحتاج إلى إعادة كتابة أو تطوير.",
+                                "تحديد الصفحات التي تحتاج إلى إضافة محتوى جديد.",
+                                "اكتشاف فرص إنشاء صفحات متخصصة لكل برنامج أو مبادرة.",
+                                "تحديد نقاط الضعف في المحتوى من حيث المعلومات والكلمات المفتاحية وتجربة القراءة."
+                            ]
+                        },
+                        {
+                            subtitle: "ج. تحليل الظهور الحالي",
+                            items: [
+                                "مراجعة أداء الموقع في Google Search Console.",
+                                "تحليل عدد مرات ظهور الموقع في نتائج البحث.",
+                                "تحليل عدد النقرات ومعدل النقر إلى الظهور CTR.",
+                                "تحديد الكلمات المفتاحية التي يظهر الموقع من خلالها.",
+                                "تحديد الصفحات الأعلى والأقل أداءً.",
+                                "تحليل مصادر الزيارات العضوية.",
+                                "تحديد فرص تحسين ترتيب الصفحات الحالية.",
+                                "دراسة المنافسين والجهات المشابهة في المجال التنموي والخيري والتعليمي."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "2. البحث عن الكلمات المفتاحية Keyword Research",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم إعداد دراسة متخصصة للكلمات المفتاحية المرتبطة بطبيعة عمل الجمعية، مع التركيز على الكلمات التي يستخدمها الجمهور المستهدف عند البحث عن البرامج والأنشطة والخدمات المتعلقة بالطفولة.",
+                        "وتشمل الدراسة:"
+                    ],
+                    items: [
+                        "تحديد الكلمات المفتاحية الرئيسية المرتبطة بمجال تنمية الطفولة.",
+                        "استخراج الكلمات المفتاحية المرتبطة بالبرامج التعليمية والتربوية.",
+                        "استهداف الكلمات المتعلقة بالأنشطة الثقافية والإبداعية للأطفال.",
+                        "استهداف الكلمات المتعلقة بالأندية والبرامج الصيفية.",
+                        "استهداف الكلمات المرتبطة بالتطوع والمشاركة المجتمعية.",
+                        "تحديد الكلمات المرتبطة بالجمعيات والجهات التنموية في المدينة المنورة.",
+                        "دراسة الكلمات طويلة الذيل Long-tail Keywords ذات النية البحثية الواضحة.",
+                        "تصنيف الكلمات حسب نية الباحث: معلوماتية، خدمية، محلية، أو متعلقة بالتسجيل.",
+                        "تحديد مستوى المنافسة وحجم البحث والفرص المتاحة.",
+                        "توزيع الكلمات المفتاحية على صفحات الموقع وفقًا لطبيعة كل صفحة."
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "ومن أمثلة المجموعات المستهدفة:",
+                            items: [
+                                "برامج الأطفال في المدينة المنورة.",
+                                "تنمية مهارات الأطفال.",
+                                "الأنشطة الثقافية للأطفال.",
+                                "البرامج التعليمية للأطفال.",
+                                "اكتشاف مواهب الأطفال.",
+                                "الأندية الصيفية للأطفال.",
+                                "برامج الإبداع والابتكار.",
+                                "التطوع في الجمعيات الخيرية.",
+                                "المبادرات المجتمعية للأطفال.",
+                                "الجمعيات المعنية بالطفولة في المدينة المنورة."
+                            ]
+                        }
+                    ],
+                    outro: [
+                        "وتتم مراجعة هذه الكلمات وتطويرها بناءً على بيانات البحث الفعلية، وليس اعتمادًا على التوقعات فقط."
+                    ]
+                },
+                {
+                    title: "3. التهيئة الداخلية للموقع On-Page SEO",
+                    accent: "emerald",
+                    intro: [
+                        "سيتم العمل على تحسين جميع العناصر الداخلية للصفحات المستهدفة، بهدف مساعدة محركات البحث على فهم محتوى الموقع وتصنيف صفحاته بصورة صحيحة.",
+                        "وتشمل الأعمال:"
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. تحسين عناوين الصفحات",
+                            items: [
+                                "كتابة عناوين SEO فريدة لكل صفحة.",
+                                "تضمين الكلمات المفتاحية المناسبة داخل العناوين.",
+                                "صياغة عناوين واضحة وجاذبة للباحث.",
+                                "تجنب تكرار العناوين بين الصفحات."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. تحسين الأوصاف التعريفية Meta Descriptions",
+                            items: [
+                                "كتابة وصف مخصص لكل صفحة.",
+                                "توضيح القيمة التي تقدمها الصفحة للزائر.",
+                                "تضمين الكلمات المفتاحية بصورة طبيعية.",
+                                "تحسين صياغة الأوصاف لزيادة احتمالية النقر على النتائج."
+                            ]
+                        },
+                        {
+                            subtitle: "ج. تحسين المحتوى النصي",
+                            items: [
+                                "إعادة صياغة المحتوى الضعيف أو المختصر.",
+                                "إثراء الصفحات بالمعلومات ذات الصلة.",
+                                "توزيع الكلمات المفتاحية بصورة طبيعية.",
+                                "تنظيم المحتوى باستخدام العناوين الفرعية.",
+                                "تحسين قابلية القراءة وسهولة الوصول إلى المعلومات.",
+                                "إضافة روابط داخلية تربط الصفحات والبرامج ذات الصلة."
+                            ]
+                        },
+                        {
+                            subtitle: "د. تحسين الصور والوسائط",
+                            items: [
+                                "ضغط الصور دون التأثير على جودتها.",
+                                "استخدام أسماء ملفات واضحة.",
+                                "إضافة النصوص البديلة للصور.",
+                                "تحسين أبعاد الصور بما يتناسب مع الصفحات.",
+                                "تحسين الصور المستخدمة في صفحات البرامج والمبادرات.",
+                                "تحسين ظهور الصور في نتائج البحث عند ملاءمة ذلك."
+                            ]
+                        },
+                        {
+                            subtitle: "هـ. تحسين الروابط الداخلية",
+                            items: [
+                                "ربط صفحات البرامج بالأقسام التعريفية ذات الصلة.",
+                                "ربط الأخبار بالمبادرات التي تتناولها.",
+                                "ربط صفحات الإنجازات بالتقارير والمحتوى الداعم.",
+                                "تحسين مسارات انتقال الزائر بين الصفحات.",
+                                "توزيع قوة الروابط الداخلية على الصفحات ذات الأولوية."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "4. التهيئة البرمجية والفنية Technical SEO",
+                    accent: "amber",
+                    intro: [
+                        "يتم العمل على معالجة المشكلات التقنية التي قد تعيق ظهور الموقع في محركات البحث، بالتنسيق مع الفريق المسؤول عن تطوير الموقع وإدارته.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "تحسين سرعة تحميل الموقع.",
+                        "تقليل أحجام الملفات والصور.",
+                        "تحسين تحميل ملفات CSS وJavaScript وفقًا لإمكانيات النظام.",
+                        "تحسين التخزين المؤقت Caching.",
+                        "تحسين طريقة تحميل الصور والوسائط.",
+                        "معالجة مشكلات التحميل على الهواتف المحمولة.",
+                        "تحسين مؤشرات Core Web Vitals.",
+                        "تنظيم هيكل الصفحات والروابط.",
+                        "معالجة أخطاء الفهرسة والزحف.",
+                        "تحسين خرائط الموقع.",
+                        "تطبيق البيانات المنظمة المناسبة.",
+                        "معالجة مشكلات المحتوى المكرر.",
+                        "مراجعة صفحات الأرشيف والتصنيفات.",
+                        "تحسين بنية التنقل داخل الموقع.",
+                        "متابعة الأخطاء التقنية التي تظهر خلال فترة العمل ومعالجتها."
+                    ],
+                    outro: [
+                        "الهدف: إنشاء بيئة تقنية تساعد محركات البحث على اكتشاف محتوى الجمعية وفهمه وفهرسته بصورة أفضل، وتوفر تجربة استخدام سلسة للزوار."
+                    ]
+                },
+                {
+                    title: "5. تحسين المحتوى SEO Content Optimization",
+                    accent: "teal",
+                    intro: [
+                        "سيتم تطوير محتوى الموقع بحيث لا يقتصر على التعريف بالجمعية، بل يتحول إلى مصدر معلومات متكامل يخدم الجمهور المستهدف ويعكس خبرة الجمعية في مجال تنمية الطفولة.",
+                        "ويشمل:"
+                    ],
+                    items: [
+                        "تطوير صفحات التعريف بالجمعية.",
+                        "تحسين صفحات الرؤية والرسالة والأهداف.",
+                        "إعداد محتوى تفصيلي للبرامج والمبادرات.",
+                        "كتابة وصف احترافي لكل برنامج.",
+                        "توضيح الفئة المستهدفة من كل برنامج.",
+                        "شرح المهارات والمعارف التي يكتسبها المستفيد.",
+                        "توضيح آلية التسجيل وشروط المشاركة.",
+                        "إعداد محتوى للأخبار والفعاليات والأنشطة.",
+                        "كتابة مقالات توعوية وتثقيفية مرتبطة بالطفولة.",
+                        "إعداد محتوى عن أهمية الأنشطة الثقافية والتعليمية.",
+                        "نشر محتوى يوضح أثر البرامج في تطوير مهارات الأطفال.",
+                        "إعداد صفحات متخصصة للفعاليات والأنشطة المهمة.",
+                        "تحسين صفحات التقارير والإنجازات لتصبح أكثر قابلية للاكتشاف والبحث."
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "ومن أمثلة الموضوعات المقترحة للمحتوى:",
+                            items: [
+                                "أهمية اكتشاف المواهب لدى الأطفال في المراحل المبكرة.",
+                                "كيف تسهم الأنشطة الثقافية في بناء شخصية الطفل؟",
+                                "دور البرامج الإبداعية في تنمية مهارات التواصل.",
+                                "أهمية المسرح والخطابة في تعزيز ثقة الأطفال بأنفسهم.",
+                                "دور الأنشطة التقنية في إعداد الأطفال لمهارات المستقبل.",
+                                "كيف تساهم المبادرات المجتمعية في دعم نمو الأطفال؟",
+                                "أهمية البيئة التعليمية المحفزة للإبداع والابتكار.",
+                                "دور الأسرة والمربين في اكتشاف قدرات الأطفال."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "6. تحسين الظهور المحلي Local SEO",
+                    accent: "cyan",
+                    intro: [
+                        "نظرًا لارتباط نشاط الجمعية بالمجتمع المحلي في المدينة المنورة، سيتم تخصيص جانب من العمل لتعزيز ظهورها في عمليات البحث المحلية.",
+                        "ويشمل:"
+                    ],
+                    items: [
+                        "تحسين بيانات الجمعية على Google Business Profile.",
+                        "مراجعة الاسم والعنوان وبيانات الاتصال.",
+                        "تحديث وصف النشاط والخدمات.",
+                        "إضافة الصور المناسبة للجمعية والأنشطة.",
+                        "تنظيم الفئات والتصنيفات المرتبطة بالنشاط.",
+                        "تحسين ظهور الجمعية عند البحث عن الجهات المعنية بالطفولة والبرامج التنموية في المدينة المنورة.",
+                        "توحيد بيانات الاتصال والعنوان عبر المنصات ذات الصلة.",
+                        "متابعة ظهور الجمعية في خرائط Google.",
+                        "نشر التحديثات والأخبار المناسبة على الملف التجاري.",
+                        "متابعة التقييمات والاستفسارات والرد عليها وفق سياسة الجمعية."
+                    ]
+                },
+                {
+                    title: "7. تحسين الظهور في محركات البحث المعتمدة على الذكاء الاصطناعي GEO",
+                    accent: "emerald",
+                    intro: [
+                        "مع تطور طرق البحث والوصول إلى المعلومات، سيتم العمل على تحسين قابلية محتوى الجمعية للظهور والاستشهاد به في أنظمة البحث والإجابات المعتمدة على الذكاء الاصطناعي.",
+                        "وتشمل الأعمال:"
+                    ],
+                    items: [
+                        "تنظيم المحتوى بصيغة واضحة ومباشرة.",
+                        "كتابة تعريفات دقيقة بالجمعية وبرامجها.",
+                        "إعداد صفحات تجيب عن الأسئلة الشائعة حول أنشطة الجمعية.",
+                        "توضيح أسماء البرامج وأهدافها والفئات المستفيدة منها.",
+                        "دعم المعلومات بالأرقام والإنجازات الموثقة.",
+                        "تحسين بنية العناوين والأسئلة والأجوبة.",
+                        "تطبيق البيانات المنظمة المناسبة.",
+                        "تعزيز الترابط بين صفحات البرامج والأخبار والتقارير.",
+                        "توحيد المعلومات المؤسسية المنشورة عبر المنصات الرسمية.",
+                        "تطوير محتوى مرجعي قابل للفهم والاستخراج بواسطة أنظمة الذكاء الاصطناعي."
+                    ]
+                },
+                {
+                    title: "8. إدارة أدوات التحليل والمتابعة",
+                    accent: "amber",
+                    intro: [
+                        "سيتم إعداد ومتابعة أدوات قياس أداء الموقع، وتشمل:"
+                    ],
+                    items: [
+                        "Google Analytics 4 لتحليل سلوك الزوار ومصادر الزيارات.",
+                        "Google Search Console لمراقبة أداء الظهور في البحث.",
+                        "Google Tag Manager لإدارة أكواد التتبع.",
+                        "إعداد تتبع النقرات على أزرار التسجيل والتواصل.",
+                        "قياس الوصول إلى صفحات البرامج.",
+                        "تتبع عمليات الانتقال إلى نماذج التسجيل.",
+                        "قياس مصادر الزيارات التي تحقق التسجيلات.",
+                        "إعداد لوحات متابعة دورية للأداء.",
+                        "رصد الصفحات التي تحقق أفضل النتائج وتطويرها."
+                    ]
+                },
+                {
+                    title: "9. المتابعة المستمرة والتطوير",
+                    accent: "teal",
+                    intro: [
+                        "لن تقتصر خدمة SEO على إجراء تحسينات أولية للموقع، بل ستستمر المتابعة طوال مدة التعاقد من خلال:"
+                    ],
+                    items: [
+                        "مراقبة أداء الصفحات والكلمات المفتاحية.",
+                        "متابعة التغيرات في ترتيب نتائج البحث.",
+                        "معالجة الأخطاء التقنية الجديدة.",
+                        "تحديث المحتوى الذي يحتاج إلى تطوير.",
+                        "إضافة الكلمات المفتاحية الجديدة ذات الفرص المناسبة.",
+                        "تحسين الصفحات ذات معدلات الظهور المرتفعة والنقرات المنخفضة.",
+                        "تطوير الروابط الداخلية.",
+                        "متابعة أداء المنافسين.",
+                        "تقديم توصيات مستمرة لتطوير بنية الموقع ومحتواه."
+                    ]
+                }
+            ];
+
+            // رابعًا: خدمة إدارة حسابات التواصل الاجتماعي
+            const socialSections = [
+                {
+                    title: "1. بناء الاستراتيجية الرقمية لمنصات التواصل",
+                    accent: "teal",
+                    intro: [
+                        "سيتم إعداد استراتيجية متكاملة لإدارة حسابات الجمعية، تعتمد على طبيعة نشاطها وأهدافها والجمهور المستهدف، مع مراعاة اختلاف طبيعة كل منصة وطريقة استهلاك الجمهور للمحتوى.",
+                        "وتستهدف الاستراتيجية تحقيق التوازن بين المحتوى التعريفي والتوعوي والتثقيفي والتفاعلي والترويجي."
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "المنصات المستهدفة:",
+                            items: [
+                                "Instagram",
+                                "X",
+                                "Snapchat",
+                                "TikTok",
+                                "Facebook",
+                                "YouTube"
+                            ]
+                        }
+                    ],
+                    outro: [
+                        "ويتم تحديد أولويات النشر والتوزيع وفقًا للحسابات المتاحة، والجمهور الفعلي، ونتائج تحليل الأداء."
+                    ]
+                },
+                {
+                    title: "2. دراسة الجمهور المستهدف",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم تحديد شرائح الجمهور التي تتعامل معها الجمعية، مع بناء رسائل محتوى مناسبة لكل شريحة."
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. أولياء الأمور والأسر - التركيز على:",
+                            items: [
+                                "التعريف بالبرامج المتاحة للأطفال.",
+                                "توضيح الفوائد التعليمية والتربوية للبرامج.",
+                                "إبراز بيئة الجمعية وأنشطتها.",
+                                "نشر تجارب المشاركين وانطباعات أولياء الأمور.",
+                                "توضيح إجراءات التسجيل والمشاركة."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. المهتمون بتنمية الطفولة والتعليم - التركيز على:",
+                            items: [
+                                "نشر المحتوى التوعوي والتثقيفي.",
+                                "إبراز الممارسات التربوية الإيجابية.",
+                                "التعريف بالبرامج المبتكرة.",
+                                "مشاركة المعرفة والتجارب المرتبطة بتنمية مهارات الأطفال."
+                            ]
+                        },
+                        {
+                            subtitle: "ج. المتطوعون والمهتمون بالعمل المجتمعي - التركيز على:",
+                            items: [
+                                "التعريف بالفرص التطوعية.",
+                                "توضيح أثر العمل التطوعي.",
+                                "إبراز المبادرات المجتمعية.",
+                                "نشر قصص وتجارب المتطوعين.",
+                                "تشجيع المشاركة في الأنشطة والفعاليات."
+                            ]
+                        },
+                        {
+                            subtitle: "د. الجهات والمؤسسات والشركاء المحتملون - التركيز على:",
+                            items: [
+                                "عرض إنجازات الجمعية.",
+                                "إبراز نتائج البرامج والمبادرات.",
+                                "التعريف بالفرص المتاحة للتعاون.",
+                                "نشر قصص النجاح والشراكات.",
+                                "توضيح الأثر التنموي الذي تحققه الجمعية."
+                            ]
+                        },
+                        {
+                            subtitle: "هـ. الداعمون والمهتمون بالقطاع غير الربحي - التركيز على:",
+                            items: [
+                                "تعزيز الثقة والمصداقية.",
+                                "عرض التقارير والإنجازات.",
+                                "إبراز الأثر الاجتماعي.",
+                                "توضيح مجالات المشاركة والدعم.",
+                                "التعريف بمشروعات الجمعية واحتياجاتها وفق المعلومات المعتمدة."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "3. إعداد الهوية الاتصالية والمحتوى",
+                    accent: "emerald",
+                    intro: [
+                        "سيتم وضع دليل اتصالي للمحتوى الرقمي يضمن توحيد الرسائل التسويقية وطريقة مخاطبة الجمهور.",
+                        "ويشمل:"
+                    ],
+                    items: [
+                        "تحديد نبرة التواصل المناسبة للجمعية.",
+                        "توحيد المصطلحات المستخدمة في المنشورات.",
+                        "صياغة الرسائل الرئيسية للجمعية.",
+                        "وضع أسلوب ثابت للتعريف بالبرامج.",
+                        "تحديد طريقة عرض الإنجازات.",
+                        "توحيد أسلوب الدعوات إلى التسجيل والمشاركة.",
+                        "اعتماد أسلوب إنساني ومؤثر دون مبالغة أو استغلال عاطفي.",
+                        "مراعاة خصوصية الأطفال وحقوقهم عند استخدام الصور والقصص."
+                    ]
+                },
+                {
+                    title: "4. صناعة المحتوى وإدارة النشر",
+                    accent: "amber",
+                    intro: [
+                        "تتولى شركة شراع إعداد وإدارة المحتوى الخاص بالحسابات، بداية من الفكرة والتخطيط وحتى التصميم والكتابة والنشر.",
+                        "وتشمل الخدمة:"
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. المحتوى التعريفي والمؤسسي",
+                            items: [
+                                "التعريف بالجمعية ورسالتها ورؤيتها.",
+                                "تقديم أهداف الجمعية بصورة مبسطة.",
+                                "التعريف بفريق العمل والجهود التنظيمية وفق الموافقات.",
+                                "إبراز مجالات عمل الجمعية.",
+                                "التعريف بالبرامج والمبادرات.",
+                                "توضيح آليات الاستفادة من الخدمات."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. المحتوى التوعوي والتثقيفي",
+                            items: [
+                                "منشورات توعوية عن تنمية مهارات الأطفال.",
+                                "نصائح تربوية وتعليمية للأسر.",
+                                "معلومات عن اكتشاف المواهب.",
+                                "محتوى عن أهمية القراءة والكتابة.",
+                                "محتوى عن الابتكار والتقنية.",
+                                "توعية بأهمية الأنشطة الثقافية والفنية.",
+                                "محتوى عن الصحة النفسية والاجتماعية للأطفال ضمن المعلومات المعتمدة والمراجعة من المختصين."
+                            ]
+                        },
+                        {
+                            subtitle: "ج. المحتوى الخاص بالبرامج والمبادرات",
+                            items: [
+                                "التعريف بكل برنامج.",
+                                "شرح أهداف البرنامج ومميزاته.",
+                                "توضيح الفئات العمرية المستهدفة.",
+                                "الإعلان عن فتح التسجيل.",
+                                "نشر تفاصيل الفعاليات والأنشطة.",
+                                "التذكير بمواعيد التسجيل.",
+                                "تغطية الأنشطة أثناء التنفيذ.",
+                                "إبراز نتائج البرامج بعد انتهائها."
+                            ]
+                        },
+                        {
+                            subtitle: "د. المحتوى القصصي Storytelling",
+                            note: "يُعد المحتوى القصصي من أهم عناصر استراتيجية الجمعية، لأنه ينقل أثر العمل التنموي بصورة إنسانية قريبة من الجمهور. ويشمل:",
+                            items: [
+                                "قصص النجاح والتطور لدى المستفيدين.",
+                                "عرض تجارب المشاركين في البرامج.",
+                                "إبراز المهارات التي اكتسبها الأطفال.",
+                                "توثيق التجارب والأنشطة الملهمة.",
+                                "عرض شهادات أولياء الأمور والمستفيدين.",
+                                "تقديم قصص الإنجازات بصورة مرئية ونصية."
+                            ],
+                            footerNote: "على أن يتم الحصول على الموافقات اللازمة قبل نشر أي محتوى يتضمن الأطفال أو بياناتهم أو تجاربهم الشخصية."
+                        },
+                        {
+                            subtitle: "هـ. المحتوى التفاعلي",
+                            items: [
+                                "أسئلة ومسابقات تثقيفية.",
+                                "استطلاعات الرأي.",
+                                "اختبارات معرفية بسيطة.",
+                                "أسئلة مرتبطة بالطفولة والتربية.",
+                                "تحديات إبداعية مناسبة للفئات المستهدفة.",
+                                "محتوى يحفز الجمهور على المشاركة والتعليق.",
+                                "أسئلة تفاعلية مرتبطة بالبرامج والفعاليات."
+                            ]
+                        },
+                        {
+                            subtitle: "و. المحتوى الخاص بالإنجازات",
+                            items: [
+                                "نشر أرقام الإنجازات المعتمدة.",
+                                "عرض نتائج البرامج.",
+                                "إبراز أعداد المستفيدين والمتطوعين.",
+                                "توثيق الشراكات.",
+                                "نشر مقتطفات من التقارير السنوية.",
+                                "تحويل الإنجازات إلى تصاميم معلوماتية Infographics.",
+                                "إعداد محتوى مرئي يلخص الأثر المحقق."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "5. التصميمات الجرافيكية والمواد البصرية",
+                    accent: "teal",
+                    intro: [
+                        "تتولى شركة شراع تصميم المواد البصرية اللازمة لدعم استراتيجية النشر، مع الالتزام بالهوية البصرية المعتمدة للجمعية.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "تصميم المنشورات الثابتة.",
+                        "تصميم المنشورات التوعوية.",
+                        "تصميم الإنفوجرافيك.",
+                        "تصميم الإعلانات الخاصة بالبرامج.",
+                        "تصميم أغلفة الفيديوهات.",
+                        "تصميم القصص اليومية Stories.",
+                        "تصميم المواد الخاصة بالمناسبات الوطنية والمجتمعية.",
+                        "تصميم الإعلانات الخاصة بالفعاليات والمبادرات.",
+                        "تصميم القوالب البصرية المتكررة.",
+                        "إعداد المواد البصرية الخاصة بالشراكات والإنجازات."
+                    ],
+                    outro: [
+                        "ويتم مراعاة المقاسات المناسبة لكل منصة، ووضوح الرسالة، وسهولة قراءة النصوص، وتناسق العناصر البصرية."
+                    ]
+                },
+                {
+                    title: "6. إنتاج وإدارة محتوى الفيديو",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم توظيف الفيديو باعتباره أحد أهم أدوات الوصول والتفاعل، خصوصًا في عرض الأنشطة والبرامج والتجارب الإنسانية.",
+                        "وتشمل الأعمال:"
+                    ],
+                    items: [
+                        "إعداد أفكار وسيناريوهات الفيديوهات.",
+                        "كتابة النصوص الإبداعية للفيديو.",
+                        "إنتاج فيديوهات تعريفية بالجمعية.",
+                        "إعداد فيديوهات قصيرة للتعريف بالبرامج.",
+                        "إعداد فيديوهات توعوية وتثقيفية.",
+                        "إعداد فيديوهات تلخيصية للفعاليات.",
+                        "إنتاج مقاطع قصيرة مناسبة لـ Reels وTikTok وShorts.",
+                        "إعداد فيديوهات تستعرض إنجازات الجمعية.",
+                        "مونتاج الفيديوهات وإضافة النصوص والعناصر البصرية.",
+                        "تحسين جودة الصوت والصورة.",
+                        "إعداد نسخ مختلفة من الفيديو بما يتناسب مع المنصات."
+                    ],
+                    outro: [
+                        "ويتم تحديد آلية التصوير الميداني، ومواقع التصوير، وعدد أيام الإنتاج وفق الاتفاق التنفيذي والإمكانات المتاحة، مع الاستفادة من المواد المصورة التي توفرها الجمعية."
+                    ]
+                },
+                {
+                    title: "7. إدارة التقويم التحريري",
+                    accent: "emerald",
+                    intro: [
+                        "سيتم إعداد تقويم تحريري منظم لإدارة المحتوى والنشر بصورة مستمرة.",
+                        "ويشمل:"
+                    ],
+                    items: [
+                        "تحديد الموضوعات الرئيسية.",
+                        "توزيع المحتوى على المنصات.",
+                        "تحديد مواعيد النشر.",
+                        "تحديد أهداف كل منشور.",
+                        "ربط المنشورات بالبرامج والفعاليات.",
+                        "مراعاة المناسبات الوطنية والاجتماعية.",
+                        "تحديد المنشورات التي تحتاج إلى دعم إعلاني.",
+                        "مراجعة المحتوى قبل النشر.",
+                        "تنظيم عملية الاعتماد والموافقة من الجمعية."
+                    ],
+                    outro: [
+                        "ويتم إعداد التقويم بصورة مستمرة وقابلة للتعديل وفق المستجدات والفعاليات والبرامج التي تعلن عنها الجمعية."
+                    ]
+                },
+                {
+                    title: "8. إدارة الحسابات والتفاعل مع الجمهور",
+                    accent: "amber",
+                    intro: [
+                        "لا تقتصر الإدارة على النشر فقط، بل تشمل متابعة الحسابات والتفاعل مع الجمهور بما يحافظ على صورة الجمعية ويعزز جودة التواصل.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "متابعة التعليقات والرسائل.",
+                        "الرد على الاستفسارات العامة وفق المعلومات المعتمدة.",
+                        "توجيه المستفسرين إلى روابط التسجيل والخدمات.",
+                        "متابعة الأسئلة المتكررة وإعداد ردود موحدة لها.",
+                        "رصد التعليقات والملاحظات.",
+                        "تصعيد الشكاوى أو الاستفسارات الحساسة إلى إدارة الجمعية.",
+                        "متابعة التفاعلات على المنشورات.",
+                        "رصد الموضوعات المتداولة ذات الصلة بمجال الجمعية.",
+                        "التعامل المهني مع التعليقات السلبية.",
+                        "إعداد تقارير دورية عن أبرز استفسارات الجمهور."
+                    ],
+                    outro: [
+                        "ولا يتم تقديم إجابات عن المسائل الإدارية أو المالية أو الحالات الخاصة بالمستفيدين دون الرجوع إلى الجهة المختصة داخل الجمعية."
+                    ]
+                },
+                {
+                    title: "9. إدارة المناسبات والحملات الموسمية",
+                    accent: "teal",
+                    intro: [
+                        "سيتم إعداد محتوى خاص بالمناسبات التي تتناسب مع رسالة الجمعية، ومنها:"
+                    ],
+                    items: [
+                        "اليوم الوطني السعودي.",
+                        "يوم التأسيس.",
+                        "اليوم العالمي للطفل.",
+                        "اليوم العالمي للتطوع.",
+                        "المناسبات التعليمية والثقافية.",
+                        "الإجازات الصيفية.",
+                        "العودة إلى المدارس.",
+                        "المناسبات المجتمعية ذات الصلة بالطفولة.",
+                        "الفعاليات والمعارض المحلية.",
+                        "المناسبات المرتبطة بالبرامج والأنشطة."
+                    ],
+                    outro: [
+                        "ويشمل ذلك إعداد الأفكار والتصميمات والرسائل الاتصالية والمحتوى المرئي، مع ربط كل مناسبة بأهداف الجمعية وبرامجها."
+                    ]
+                },
+                {
+                    title: "10. متابعة وتحليل أداء الحسابات",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم تحليل الأداء بصورة مستمرة من خلال مؤشرات تشمل:"
+                    ],
+                    items: [
+                        "نمو عدد المتابعين.",
+                        "حجم الوصول إلى الجمهور.",
+                        "مرات ظهور المحتوى.",
+                        "معدل التفاعل.",
+                        "عدد المشاركات والحفظ.",
+                        "مشاهدات الفيديو.",
+                        "معدل إكمال مشاهدة الفيديو.",
+                        "عدد النقرات على الروابط.",
+                        "حجم الزيارات إلى الموقع من منصات التواصل.",
+                        "عدد الاستفسارات الواردة.",
+                        "عدد التسجيلات الناتجة عن القنوات الاجتماعية عند توافر بيانات التتبع."
+                    ],
+                    outro: [
+                        "وسيتم الاستفادة من النتائج في تطوير نوعية المحتوى وتحديد المنصات والموضوعات الأكثر فاعلية."
+                    ]
+                }
+            ];
+
+            // خامسًا: خدمة إدارة الحملات الإعلانية الممولة
+            const adsSections = [
+                {
+                    title: "1. إعداد الاستراتيجية الإعلانية",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم بناء استراتيجية إعلانية متكاملة تتوافق مع الأهداف المؤسسية للجمعية، مع تقسيم الحملات حسب الهدف والجمهور والمنصة، بدلًا من الاعتماد على حملات عامة لا تحقق نتائج قابلة للقياس.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "تحليل الوضع الإعلاني الحالي.",
+                        "دراسة الجمهور المستهدف.",
+                        "تحديد الأهداف الإعلانية لكل حملة.",
+                        "تحديد المنصات الأنسب لكل هدف.",
+                        "إعداد الرسائل الإعلانية.",
+                        "تحديد نوع المواد الإبداعية المطلوبة.",
+                        "تحديد صفحات الهبوط المناسبة.",
+                        "وضع آلية قياس النتائج.",
+                        "توزيع الميزانية الإعلانية المعتمدة على الحملات وفق الأولويات والأداء."
+                    ],
+                    outro: [
+                        "ملاحظة: ميزانية الإعلانات والإنفاق على المنصات لا تدخل ضمن أتعاب إدارة الحملات، ويتم تحديدها واعتمادها بصورة مستقلة من الجمعية. ولا تتضمن هذه الخطة أرقامًا محددة للميزانية الإعلانية."
+                    ]
+                },
+                {
+                    title: "2. إدارة الحملات عبر Meta Ads",
+                    accent: "teal",
+                    intro: [
+                        "تشمل إدارة الحملات على منصتي Facebook وInstagram، من خلال:"
+                    ],
+                    items: [
+                        "إعداد الحملات التعريفية بالجمعية.",
+                        "حملات زيادة الوعي بالعلامة المؤسسية.",
+                        "حملات الوصول إلى الجمهور المستهدف.",
+                        "حملات التفاعل مع المحتوى.",
+                        "حملات الترويج للبرامج والمبادرات.",
+                        "حملات زيادة الزيارات إلى الموقع.",
+                        "حملات التسجيل في البرامج.",
+                        "حملات إعادة استهداف زوار الموقع والمتفاعلين مع الحسابات عند توافر بيانات كافية وموافقات التتبع اللازمة."
+                    ],
+                    outro: [
+                        "ويتم اختبار الإعلانات من حيث الصور والفيديوهات والنصوص والجمهور، وتحسين الحملات بناءً على النتائج الفعلية."
+                    ]
+                },
+                {
+                    title: "3. إدارة حملات Google Ads",
+                    accent: "emerald",
+                    intro: [
+                        "تستهدف حملات Google الوصول إلى الجمهور الذي يبحث بالفعل عن البرامج والخدمات والأنشطة ذات الصلة بمجال الجمعية.",
+                        "وتشمل:"
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. حملات البحث Search Ads",
+                            items: [
+                                "استهداف الكلمات المفتاحية المرتبطة بالبرامج التعليمية للأطفال.",
+                                "استهداف الباحثين عن الأنشطة الثقافية والإبداعية.",
+                                "استهداف الباحثين عن الأندية والبرامج الصيفية.",
+                                "استهداف الباحثين عن برامج تنمية المهارات.",
+                                "استهداف الكلمات المرتبطة بالجمعية والأنشطة المحلية.",
+                                "توجيه الباحث إلى صفحة البرنامج المناسبة بدلًا من الاكتفاء بإرساله إلى الصفحة الرئيسية."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. حملات العرض Display Ads",
+                            items: [
+                                "نشر إعلانات مرئية للتعريف بالجمعية.",
+                                "الوصول إلى شرائح الجمهور المهتمة بالطفولة والتعليم.",
+                                "دعم الحملات التعريفية بالبرامج والفعاليات.",
+                                "إعادة استهداف زوار الموقع وفق سياسات المنصة."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "4. إدارة الحملات عبر Snapchat Ads",
+                    accent: "amber",
+                    intro: [
+                        "يتم استخدام Snapchat للوصول إلى شرائح الجمهور المناسبة، مع التركيز على المحتوى المرئي السريع.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "حملات التوعية بالبرامج.",
+                        "الترويج للأنشطة والفعاليات.",
+                        "حملات التسجيل في البرامج.",
+                        "الإعلان عن الفرص والمبادرات.",
+                        "استخدام الفيديوهات القصيرة والتصميمات الرأسية.",
+                        "توجيه المستخدم إلى صفحات التسجيل المناسبة."
+                    ],
+                    outro: [
+                        "ويتم اختيار الجمهور وفق معايير الاستهداف المسموح بها، مع مراعاة ملاءمة الرسائل الإعلانية لطبيعة الجمعية والفئات العمرية المستهدفة."
+                    ]
+                },
+                {
+                    title: "5. إدارة الحملات عبر TikTok Ads",
+                    accent: "cyan",
+                    intro: [
+                        "سيتم الاستفادة من طبيعة منصة TikTok في نشر المحتوى المرئي والوصول إلى جمهور جديد.",
+                        "وتشمل:"
+                    ],
+                    items: [
+                        "حملات زيادة الوعي بالجمعية.",
+                        "الترويج للفيديوهات التعريفية.",
+                        "إبراز البرامج والأنشطة الإبداعية.",
+                        "عرض مقتطفات من الفعاليات.",
+                        "استهداف المهتمين بالأنشطة التعليمية والثقافية.",
+                        "توجيه الجمهور إلى صفحات البرامج والتسجيل."
+                    ],
+                    outro: [
+                        "وسيتم الاعتماد على فيديوهات قصيرة ذات بداية جاذبة ورسالة واضحة ودعوة مباشرة لاتخاذ الإجراء المطلوب."
+                    ]
+                },
+                {
+                    title: "6. أنواع الحملات الإعلانية التي سيتم تنفيذها",
+                    accent: "teal",
+                    intro: [
+                        "سيتم تنظيم الحملات ضمن مسارات رئيسية، تعمل بالتوازي وفق احتياجات الجمعية."
+                    ],
+                    subGroups: [
+                        {
+                            subtitle: "أ. حملات الوعي بالجمعية Brand Awareness",
+                            note: "تهدف إلى تعريف الجمهور بالجمعية ورسالتها ومجالات عملها، وإبراز دورها في تنمية الطفولة وتمكين الأطفال. وتشمل:",
+                            items: [
+                                "التعريف بالجمعية.",
+                                "إبراز الرؤية والرسالة.",
+                                "تقديم البرامج الرئيسية.",
+                                "عرض الإنجازات.",
+                                "التعريف بالشراكات والمبادرات."
+                            ]
+                        },
+                        {
+                            subtitle: "ب. حملات الترويج للبرامج Program Promotion",
+                            note: "تهدف إلى زيادة الاهتمام بالبرامج والأنشطة التي تقدمها الجمعية. وتشمل:",
+                            items: [
+                                "التعريف بالبرنامج.",
+                                "توضيح الفوائد والمخرجات.",
+                                "استهداف الفئات المناسبة.",
+                                "توجيه الجمهور إلى صفحة التفاصيل.",
+                                "تحفيز التسجيل والمشاركة."
+                            ]
+                        },
+                        {
+                            subtitle: "ج. حملات التسجيل Conversion Campaigns",
+                            note: "تهدف إلى زيادة أعداد المسجلين في البرامج والأنشطة المتاحة. وتشمل:",
+                            items: [
+                                "استهداف الجمهور المهتم.",
+                                "إبراز المقاعد المتاحة عند وجود بيانات معتمدة.",
+                                "استخدام رسائل تحفيزية واضحة.",
+                                "توجيه المستخدم إلى نموذج التسجيل.",
+                                "قياس عدد التسجيلات الفعلية.",
+                                "تحليل أسباب عدم إتمام التسجيل والعمل على تحسين تجربة التحويل."
+                            ]
+                        },
+                        {
+                            subtitle: "د. حملات التطوع Volunteer Acquisition",
+                            note: "تهدف إلى استقطاب المتطوعين المهتمين بالمشاركة في أنشطة الجمعية. وتشمل:",
+                            items: [
+                                "التعريف بالفرص التطوعية.",
+                                "إبراز أثر المشاركة.",
+                                "توضيح طبيعة المهام المطلوبة.",
+                                "توجيه الجمهور إلى بوابة التطوع.",
+                                "قياس عدد طلبات التطوع ومعدلات استكمالها."
+                            ]
+                        },
+                        {
+                            subtitle: "هـ. حملات الشراكات المؤسسية",
+                            note: "تهدف إلى تعزيز وصول الجمعية إلى الجهات والمؤسسات المحتمل التعاون معها. وتشمل:",
+                            items: [
+                                "إبراز الإنجازات.",
+                                "التعريف بالبرامج القابلة للشراكة.",
+                                "عرض قصص التعاون السابقة.",
+                                "استهداف المهتمين بالمسؤولية الاجتماعية والعمل التنموي.",
+                                "توجيه الجهات المهتمة إلى قنوات التواصل الرسمية."
+                            ]
+                        },
+                        {
+                            subtitle: "و. الحملات الداعمة للتبرعات",
+                            note: "يمكن تخصيص حملات إعلانية لتعزيز الدعم والتبرعات وفق الأهداف والمشروعات المعتمدة من الجمعية، بشرط استكمال جميع التراخيص والموافقات اللازمة، والالتزام بقنوات التبرع الرسمية المعتمدة، وسياسات المنصات الإعلانية والأنظمة السعودية ذات العلاقة. وتشمل:",
+                            items: [
+                                "إبراز المشروعات التي تستقبل الدعم.",
+                                "توضيح أثر المساهمة.",
+                                "إعداد رسائل إعلانية واضحة وشفافة.",
+                                "توجيه الجمهور إلى قناة التبرع المعتمدة.",
+                                "قياس نتائج الحملة وفق البيانات المتاحة والمصرح باستخدامها."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "7. إعادة استهداف الجمهور Remarketing",
+                    accent: "emerald",
+                    intro: [
+                        "سيتم إنشاء حملات لإعادة التواصل مع الأشخاص الذين أبدوا اهتمامًا سابقًا بالجمعية، متى توافرت شروط التتبع والموافقات اللازمة.",
+                        "ومن أمثلتهم:"
+                    ],
+                    items: [
+                        "زوار الموقع الإلكتروني.",
+                        "زوار صفحات البرامج.",
+                        "الأشخاص الذين تفاعلوا مع الفيديوهات.",
+                        "المتفاعلون مع حسابات التواصل الاجتماعي.",
+                        "الأشخاص الذين بدأوا التسجيل ولم يكملوه، إذا كانت آلية التتبع تسمح بذلك."
+                    ],
+                    outro: [
+                        "وتهدف هذه الحملات إلى تذكير الجمهور بالبرامج والفرص المتاحة وتشجيعه على استكمال الإجراء المناسب."
+                    ]
+                },
+                {
+                    title: "8. إعداد المواد الإعلانية",
+                    accent: "amber",
+                    intro: [
+                        "تتولى شركة شراع إعداد المواد اللازمة للحملات، وتشمل:"
+                    ],
+                    items: [
+                        "كتابة النصوص الإعلانية.",
+                        "تصميم الإعلانات الثابتة.",
+                        "إعداد الفيديوهات الإعلانية.",
+                        "تصميم الإعلانات الرأسية.",
+                        "إعداد أكثر من صياغة للرسائل الإعلانية.",
+                        "إعداد نسخ إعلانية تتناسب مع كل شريحة.",
+                        "اختبار أكثر من فكرة إبداعية.",
+                        "إعداد دعوات واضحة لاتخاذ الإجراء Call To Action."
+                    ]
+                },
+                {
+                    title: "9. إدارة وتحسين الحملات",
+                    accent: "cyan",
+                    intro: [
+                        "تتم إدارة الحملات ومراقبتها باستمرار من خلال:"
+                    ],
+                    items: [
+                        "متابعة نتائج الحملات.",
+                        "تحليل تكلفة الوصول والتفاعل والنقرات.",
+                        "قياس تكلفة التسجيل عند توافر التتبع.",
+                        "تقييم جودة الجمهور المستهدف.",
+                        "إيقاف الإعلانات ضعيفة الأداء عند الحاجة.",
+                        "تطوير الإعلانات الأعلى أداءً.",
+                        "اختبار الجماهير المختلفة.",
+                        "تحسين توزيع الميزانيات بين الحملات.",
+                        "متابعة معدلات التحويل.",
+                        "مراجعة صفحات الهبوط.",
+                        "تقديم توصيات مستمرة لتحسين النتائج."
+                    ]
+                },
+                {
+                    title: "10. قياس نتائج الحملات",
+                    accent: "teal",
+                    intro: [
+                        "سيتم إعداد تقارير إعلانية تتضمن:"
+                    ],
+                    items: [
+                        "إجمالي الإنفاق الإعلاني.",
+                        "عدد مرات الظهور.",
+                        "حجم الوصول.",
+                        "عدد النقرات.",
+                        "معدل النقر CTR.",
+                        "تكلفة النقرة CPC.",
+                        "عدد مشاهدات الفيديو.",
+                        "عدد الزيارات إلى الموقع.",
+                        "عدد التسجيلات المنسوبة للحملات عند توافر بيانات موثوقة.",
+                        "تكلفة التسجيل.",
+                        "أداء كل منصة.",
+                        "أداء كل حملة وإعلان.",
+                        "التوصيات الخاصة بتحسين الأداء."
+                    ]
+                }
+            ];
+
+            // سادسًا: الربط والتكامل بين خدمات التسويق الرقمي
+            const integrationItems = [
+                {
+                    title: "1. التكامل بين SEO والمحتوى",
+                    text: "الموضوعات التي يتم إعدادها للموقع ستدعم استراتيجية المحتوى الاجتماعي، كما ستوفر منشورات التواصل الاجتماعي مصادر إضافية لتوجيه الجمهور إلى المقالات وصفحات البرامج."
+                },
+                {
+                    title: "2. التكامل بين السوشيال ميديا والإعلانات",
+                    text: "سيتم تحليل المنشورات والفيديوهات التي تحقق أفضل تفاعل، والاستفادة من نتائجها في تطوير المواد الإعلانية والحملات المدفوعة."
+                },
+                {
+                    title: "3. التكامل بين الإعلانات والموقع الإلكتروني",
+                    text: "سيتم توجيه الحملات إلى صفحات مناسبة لكل هدف، مع تحسين صفحات التسجيل والبرامج لتسهيل انتقال المستخدم من الإعلان إلى اتخاذ الإجراء المطلوب."
+                },
+                {
+                    title: "4. التكامل بين التقارير والتحليل",
+                    text: "سيتم ربط بيانات الموقع ومنصات التواصل والحملات الإعلانية في قراءة تحليلية شاملة، تساعد على معرفة القنوات التي تحقق أفضل النتائج."
+                },
+                {
+                    title: "5. التكامل بين الأنشطة والرسائل التسويقية",
+                    text: "يتم تنسيق المحتوى والحملات وفق البرامج والفعاليات الفعلية للجمعية، بحيث يكون هناك ترابط واضح بين ما تنشره الجمعية وما يراه الجمهور في الإعلانات وما يجده داخل الموقع."
+                }
+            ];
+
+            // سابعًا: آلية العمل والتنفيذ
+            const workflowItems = [
+                {
+                    title: "1. الاجتماع التأسيسي",
+                    items: [
+                        "عقد اجتماع مع ممثلي الجمعية.",
+                        "تحديد الأهداف الرئيسية والأولويات.",
+                        "التعرف على البرامج والمبادرات الحالية والمستقبلية.",
+                        "مراجعة الخطط والمواد التعريفية المتاحة.",
+                        "تحديد الجمهور المستهدف.",
+                        "تحديد آلية التواصل والاعتماد.",
+                        "تحديد المسؤولين عن توفير المعلومات والموافقات."
+                    ]
+                },
+                {
+                    title: "2. استلام الصلاحيات والبيانات",
+                    items: [
+                        "صلاحيات الموقع الإلكتروني.",
+                        "صلاحيات حسابات التواصل الاجتماعي.",
+                        "صلاحيات أدوات التحليل.",
+                        "صلاحيات الحسابات الإعلانية.",
+                        "الهوية البصرية المعتمدة.",
+                        "ملفات البرامج والمبادرات.",
+                        "التقارير والإنجازات المعتمدة.",
+                        "الصور والفيديوهات المتاحة.",
+                        "المعلومات اللازمة لإعداد المحتوى."
+                    ]
+                },
+                {
+                    title: "3. إعداد منظومة التخطيط",
+                    items: [
+                        "إعداد استراتيجية SEO.",
+                        "إعداد استراتيجية المحتوى.",
+                        "إعداد استراتيجية الحملات الإعلانية.",
+                        "تحديد مؤشرات الأداء.",
+                        "وضع التقويم التحريري.",
+                        "تحديد الأولويات التنفيذية.",
+                        "إعداد خطة توزيع المحتوى والإعلانات."
+                    ]
+                },
+                {
+                    title: "4. التنفيذ المتزامن",
+                    text: "تبدأ فرق العمل المختصة بتنفيذ المهام بالتوازي، وتشمل فريق تحسين محركات البحث، وفريق إدارة الحسابات والمحتوى والتصميم، وفريق إدارة الحملات الإعلانية والتحليل."
+                },
+                {
+                    title: "5. المراجعة والاعتماد",
+                    text: "يتم إرسال المواد التي تتطلب اعتماد الجمعية قبل النشر أو الإطلاق، وفق آلية مراجعة واضحة، مع تحديد مسؤول اتصال من كل طرف لتسهيل سير العمل."
+                },
+                {
+                    title: "6. المتابعة والتطوير",
+                    text: "تستمر المتابعة والتحليل والتحسين بصورة دورية طوال فترة التعاقد، مع تحديث الأولويات وفق نتائج الأداء والمستجدات والبرامج التي تطلقها الجمعية."
+                }
+            ];
+
+            // ثامنًا: التقارير ومؤشرات قياس الأداء
+            const reportsItems = [
+                {
+                    title: "أولًا: تقارير تحسين محركات البحث",
+                    subtitle: "تتضمن:",
+                    items: [
+                        "تطور الظهور في نتائج البحث.",
+                        "الكلمات المفتاحية المستهدفة.",
+                        "ترتيب الكلمات والصفحات.",
+                        "عدد الزيارات العضوية.",
+                        "عدد مرات الظهور والنقرات.",
+                        "الصفحات التي تم تحسينها.",
+                        "الأعمال التقنية المنفذة.",
+                        "الأخطاء التي تمت معالجتها.",
+                        "فرص التحسين المستقبلية."
+                    ]
+                },
+                {
+                    title: "ثانيًا: تقارير منصات التواصل الاجتماعي",
+                    subtitle: "تتضمن:",
+                    items: [
+                        "المنشورات التي تم إعدادها ونشرها.",
+                        "حجم الوصول والانطباعات.",
+                        "نمو المتابعين.",
+                        "معدلات التفاعل.",
+                        "أداء الفيديوهات.",
+                        "عدد النقرات على الروابط.",
+                        "الاستفسارات الواردة.",
+                        "أفضل أنواع المحتوى أداءً.",
+                        "التوصيات التحريرية والتسويقية."
+                    ]
+                },
+                {
+                    title: "ثالثًا: تقارير الحملات الإعلانية",
+                    subtitle: "تتضمن:",
+                    items: [
+                        "الحملات التي تم تنفيذها.",
+                        "المنصات المستخدمة.",
+                        "الإنفاق الإعلاني.",
+                        "الوصول والانطباعات.",
+                        "النقرات ومعدلاتها.",
+                        "تكاليف النتائج.",
+                        "التسجيلات المنسوبة للحملات عند توافر التتبع.",
+                        "تحليل أداء الإعلانات والجماهير.",
+                        "التوصيات المتعلقة بتحسين الحملات."
+                    ]
+                },
+                {
+                    title: "رابعًا: التقرير الاستراتيجي الشامل",
+                    subtitle: "يقدم قراءة متكاملة لأداء جميع القنوات الرقمية، مع توضيح:",
+                    items: [
+                        "مستوى تطور الحضور الرقمي للجمعية.",
+                        "مدى نمو الوصول إلى الجمهور.",
+                        "القنوات الأكثر فاعلية.",
+                        "مستوى التفاعل مع البرامج والمبادرات.",
+                        "تطور الزيارات والتسجيلات.",
+                        "أبرز الإنجازات التسويقية.",
+                        "التحديات التي ظهرت أثناء التنفيذ.",
+                        "التوصيات التطويرية للفترة التالية."
+                    ]
+                }
+            ];
+
+            // تاسعًا: ضوابط الجودة والخصوصية والامتثال
+            const complianceItems = [
+                "الالتزام بالهوية المؤسسية المعتمدة للجمعية.",
+                "مراجعة المعلومات قبل نشرها.",
+                "عدم نشر أرقام أو إحصاءات غير معتمدة.",
+                "الحفاظ على خصوصية المستفيدين.",
+                "عدم نشر صور الأطفال أو بياناتهم أو قصصهم الشخصية دون موافقات نظامية وموثقة من أصحاب الصلاحية وأولياء الأمور عند اللزوم.",
+                "مراعاة حقوق الأطفال في جميع المواد الإعلامية.",
+                "تجنب استخدام أساليب المحتوى التي قد تسيء إلى المستفيدين أو تمس كرامتهم.",
+                "الالتزام بالأنظمة واللوائح السعودية ذات العلاقة بالعمل غير الربحي والإعلانات والتبرعات.",
+                "عدم إطلاق حملات جمع تبرعات إلا بعد التأكد من التصاريح والموافقات المطلوبة.",
+                "استخدام القنوات الرسمية المعتمدة للتبرعات.",
+                "الحفاظ على سرية البيانات والصلاحيات التي توفرها الجمعية.",
+                "عدم استخدام بيانات المستفيدين في أغراض إعلانية دون أساس نظامي وموافقة مناسبة."
+            ];
+
+            // عاشرًا: التزامات شركة شراع
+            const sheraaCommitments = [
+                "توفير فريق عمل متخصص لإدارة الخدمات المتفق عليها.",
+                "إعداد وتنفيذ الاستراتيجية التسويقية المتكاملة.",
+                "تنفيذ أعمال تحسين محركات البحث والمتابعة الفنية.",
+                "إدارة حسابات التواصل الاجتماعي وفق الخطة المعتمدة.",
+                "إعداد المحتوى والتصميمات والمواد الإبداعية.",
+                "إدارة الحملات الإعلانية وتحسين أدائها.",
+                "متابعة مؤشرات الأداء وإعداد التقارير الدورية.",
+                "تقديم التوصيات المستمرة لتطوير الأداء.",
+                "التنسيق مع ممثلي الجمعية لضمان دقة المحتوى والمعلومات.",
+                "المحافظة على سرية المعلومات والبيانات والصلاحيات."
+            ];
+
+            // الحادي عشر: التزامات الجمعية
+            const assocCommitments = [
+                "توفير صلاحيات الوصول اللازمة للموقع والحسابات والمنصات الإعلانية.",
+                "توفير المعلومات الصحيحة والمعتمدة عن البرامج والمبادرات.",
+                "تزويد فريق العمل بالتقارير والإنجازات والإحصاءات المتاحة.",
+                "توفير المواد المصورة المتاحة، والتنسيق للتصوير الميداني عند الاتفاق عليه.",
+                "اعتماد المحتوى والمواد الإعلانية في الوقت المناسب.",
+                "تحديد مسؤول اتصال معتمد للتنسيق والمتابعة.",
+                "توفير الميزانية الإعلانية بشكل مستقل عن أتعاب الإدارة.",
+                "توفير التصاريح والموافقات اللازمة لأي حملات تتطلب ذلك.",
+                "التنسيق مع شركة شراع بشأن مواعيد البرامج والفعاليات والتسجيلات.",
+                "إبلاغ فريق العمل بأي تغييرات جوهرية في البرامج أو المعلومات المنشورة."
+            ];
+
+            // الثاني عشر: المخرجات المستهدفة من التعاون السنوي
+            const annualOutputs = [
+                "موقعًا إلكترونيًا أكثر توافقًا مع محركات البحث وتجربة المستخدم.",
+                "بنية محتوى رقمية منظمة تعكس جميع مجالات عمل الجمعية.",
+                "حضورًا مؤسسيًا موحدًا واحترافيًا عبر منصات التواصل الاجتماعي.",
+                "مكتبة محتوى متنوعة تشمل المواد التعريفية والتوعوية والتثقيفية والقصصية.",
+                "منظومة مستمرة لإبراز البرامج والفعاليات والإنجازات.",
+                "حملات إعلانية منظمة ومبنية على أهداف قابلة للقياس.",
+                "آليات تتبع وتحليل لزيارات الموقع والتسجيلات والتفاعل.",
+                "تحسين فرص الوصول إلى المستفيدين والمتطوعين والشركاء.",
+                "تقارير دورية توضح الأداء والنتائج وفرص التطوير.",
+                "قاعدة بيانات تحليلية تساعد الجمعية في اتخاذ القرارات التسويقية المستقبلية."
+            ];
+
+            // رسم بطاقات الأهداف الاستراتيجية
+            const goalsGrid = document.getElementById('strategic-goals-grid');
+            strategicGoals.forEach(g => {
+                const card = document.createElement('div');
+                card.className = `glass-card-dark motion-card p-5 rounded-2xl border-t-4 border-${g.accent}-400`;
+                card.innerHTML = `
+                    <h3 class="font-black text-white text-base mb-3">${g.title}</h3>
+                    <ul class="list-disc list-inside space-y-1.5 text-xs md:text-sm text-teal-100 leading-relaxed">
+                        ${g.items.map(i => `<li>${i}</li>`).join('')}
+                    </ul>
+                `;
+                goalsGrid.appendChild(card);
+            });
+
+            // دالة موحدة لرسم الأقسام التفصيلية (ثالثًا ورابعًا وخامسًا)
+            function renderDetailedSections(containerId, sectionsList) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+
+                sectionsList.forEach(sec => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = `bg-teal-950/50 rounded-3xl p-5 md:p-6 border border-${sec.accent}-500/35`;
+
+                    let html = `
+                        <h3 class="text-lg md:text-xl font-black text-white border-b border-teal-800/80 pb-3 mb-4">${sec.title}</h3>
+                    `;
+
+                    if (sec.intro && sec.intro.length) {
+                        html += `<div class="space-y-2 text-xs md:text-sm text-teal-100 leading-relaxed mb-4">
+                            ${sec.intro.map(p => `<p>${p}</p>`).join('')}
+                        </div>`;
+                    }
+
+                    if (sec.items && sec.items.length) {
+                        html += `<div class="glass-card-dark p-4 md:p-5 rounded-2xl mb-4">
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 list-disc list-inside text-xs md:text-sm text-teal-50 leading-relaxed">
+                                ${sec.items.map(li => `<li>${li}</li>`).join('')}
+                            </ul>
+                        </div>`;
+                    }
+
+                    if (sec.subGroups && sec.subGroups.length) {
+                        const colsClass = sec.subGroups.length === 1 ? 'grid-cols-1' : (sec.subGroups.length === 2 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3');
+                        html += `<div class="grid ${colsClass} gap-4 mb-4">
+                            ${sec.subGroups.map(sg => `
+                                <div class="glass-card-dark motion-card p-4 md:p-5 rounded-2xl border-r-4 border-${sec.accent}-400 flex flex-col justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-teal-200 text-sm md:text-base mb-2.5">${sg.subtitle}</h4>
+                                        ${sg.note ? `<p class="text-xs text-teal-100 leading-relaxed mb-2.5">${sg.note}</p>` : ''}
+                                        <ul class="list-disc list-inside space-y-1.5 text-xs md:text-sm text-teal-50 leading-relaxed">
+                                            ${sg.items.map(item => `<li>${item}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                    ${sg.footerNote ? `<p class="mt-3 pt-2.5 border-t border-teal-800 text-xs text-amber-200 leading-relaxed">${sg.footerNote}</p>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>`;
+                    }
+
+                    if (sec.outro && sec.outro.length) {
+                        html += `<div class="bg-teal-900/50 border border-teal-700/60 p-3.5 rounded-xl space-y-1.5 text-xs md:text-sm text-teal-100 leading-relaxed">
+                            ${sec.outro.map(p => `<p>${p}</p>`).join('')}
+                        </div>`;
+                    }
+
+                    wrapper.innerHTML = html;
+                    container.appendChild(wrapper);
+                });
+            }
+
+            renderDetailedSections('seo-sections-container', seoSections);
+            renderDetailedSections('social-sections-container', socialSections);
+            renderDetailedSections('ads-sections-container', adsSections);
+
+            // رسم بطاقات الربط والتكامل (سادسًا)
+            const integrationGrid = document.getElementById('integration-grid');
+            integrationItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'glass-card-dark motion-card p-5 rounded-2xl border-r-4 border-teal-400';
+                card.innerHTML = `
+                    <h3 class="font-black text-white text-base mb-2">${item.title}</h3>
+                    <p class="text-xs md:text-sm text-teal-100 leading-relaxed">${item.text}</p>
+                `;
+                integrationGrid.appendChild(card);
+            });
+
+            // رسم بطاقات آلية العمل والتنفيذ (سابعًا)
+            const workflowGrid = document.getElementById('workflow-grid');
+            workflowItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'glass-card-dark motion-card p-5 rounded-2xl border-t-4 border-emerald-400';
+                card.innerHTML = `
+                    <h3 class="font-black text-white text-base mb-3">${item.title}</h3>
+                    ${item.items ? `
+                        <ul class="list-disc list-inside space-y-1.5 text-xs md:text-sm text-teal-100 leading-relaxed">
+                            ${item.items.map(li => `<li>${li}</li>`).join('')}
+                        </ul>
+                    ` : `<p class="text-xs md:text-sm text-teal-100 leading-relaxed">${item.text}</p>`}
+                `;
+                workflowGrid.appendChild(card);
+            });
+
+            // رسم بطاقات التقارير ومؤشرات قياس الأداء (ثامنًا)
+            const reportsGrid = document.getElementById('reports-grid');
+            reportsItems.forEach(rep => {
+                const card = document.createElement('div');
+                card.className = 'glass-card-dark motion-card p-5 rounded-2xl border-r-4 border-amber-400';
+                card.innerHTML = `
+                    <h3 class="font-black text-white text-base mb-1">${rep.title}</h3>
+                    <p class="text-xs text-amber-200 font-bold mb-3">${rep.subtitle}</p>
+                    <ul class="list-disc list-inside space-y-1.5 text-xs md:text-sm text-teal-100 leading-relaxed">
+                        ${rep.items.map(li => `<li>${li}</li>`).join('')}
+                    </ul>
+                `;
+                reportsGrid.appendChild(card);
+            });
+
+            // رسم ضوابط الجودة والخصوصية والامتثال (تاسعًا)
+            const complianceGrid = document.getElementById('compliance-grid');
+            complianceItems.forEach(text => {
+                const item = document.createElement('div');
+                item.className = 'glass-card-dark motion-card p-4 rounded-2xl border border-cyan-500/30 flex items-start gap-3 text-xs md:text-sm text-teal-50 leading-relaxed';
+                item.innerHTML = `
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 mt-1.5 flex-shrink-0"></span>
+                    <span>${text}</span>
+                `;
+                complianceGrid.appendChild(item);
+            });
+
+            // رسم التزامات شركة شراع (عاشرًا)
+            const sheraaList = document.getElementById('sheraa-commitments-list');
+            sheraaCommitments.forEach(text => {
+                const li = document.createElement('li');
+                li.className = 'glass-card-dark p-3 rounded-xl border border-teal-800/70';
+                li.textContent = text;
+                sheraaList.appendChild(li);
+            });
+
+            // رسم التزامات الجمعية (الحادي عشر)
+            const assocList = document.getElementById('assoc-commitments-list');
+            assocCommitments.forEach(text => {
+                const li = document.createElement('li');
+                li.className = 'glass-card-dark p-3 rounded-xl border border-amber-500/25';
+                li.textContent = text;
+                assocList.appendChild(li);
+            });
+
+            // رسم المخرجات المستهدفة (الثاني عشر)
+            const outputsList = document.getElementById('annual-outputs-list');
+            annualOutputs.forEach(text => {
+                const li = document.createElement('li');
+                li.className = 'glass-card-dark motion-card p-3.5 rounded-xl border border-emerald-500/30 flex items-center gap-3';
+                li.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 flex-shrink-0"></span><span>${text}</span>`;
+                outputsList.appendChild(li);
+            });
+
+            // تفعيل تأثيرات الموشن الانسيابية عند التمرير (Intersection Observer)
+            const revealElements = document.querySelectorAll('.motion-reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, idx) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('is-visible');
+                        }, idx * 70);
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.04 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        } catch (error) {
+            console.error('حدث خطأ أثناء تهيئة العرض:', error);
+        }
+    </script>
+</body>
+</html>
